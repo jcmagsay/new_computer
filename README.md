@@ -11,19 +11,33 @@ These are the programs I typically download when setting up a new computer:
 5. ohmyzsh `sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
 6. Homebrew `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
 7. Node - https://nodejs.org/en/download/
-8. Python -
+8. Python - https://www.python.org/downloads/
 
 ## Computer Settings
 
 ### Increase Track Pad Speed
 
 ```bash
+defaults write -g com.apple.mouse.scaling -float 5.0
+```
+
+### Show Hidden Files
+
+```bash
 defaults write com.apple.Finder AppleShowAllFiles true
 ```
 
+### Make sure Command Line Tools are up-to-date
+
+```bash
+xcode-select --install
+```
+
+## ITERM2
+
 ### ITERM2 / OH MY ZSH Setup
 
-#### Install
+#### Install OhMyZSH
 
 ```bash
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
@@ -61,7 +75,9 @@ rm -rf fonts
 # ANSI COLORS > BLUE > COL 1 - 6C71C4
 ```
 
-# Add GitHub SSH
+## GitHub
+
+### Add GitHub SSH
 
 ```bash
 # create
@@ -69,12 +85,6 @@ ssh-keygen -t rsa -b 4096 -C jcmagsay@gmail.com
 
 # copy key to Github account
 pbcopy < ~/.ssh/id_rsa.pub
-```
-
-### Make sure Command Line Tools are up-to-date
-
-```bash
-xcode-select --install
 ```
 
 ## VS Code Setup
