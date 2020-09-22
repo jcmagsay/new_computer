@@ -19,12 +19,16 @@ These are the programs I typically download when setting up a new computer:
 
 ```bash
 defaults write -g com.apple.mouse.scaling -float 5.0
+or 
+defaults write -g com.apple.mouse.scaling  5.0
 ```
 
 ### Show Hidden Files
 
 ```bash
 defaults write com.apple.Finder AppleShowAllFiles true
+
+killall Finder
 ```
 
 ### Make sure Command Line Tools are up-to-date
