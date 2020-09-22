@@ -78,10 +78,27 @@ rm -rf fonts
 ## GitHub
 
 ### Add GitHub SSH
+https://docs.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
 
 ```bash
 # create
-ssh-keygen -t rsa -b 4096 -C jcmagsay@gmail.com
+ssh-keygen -t rsa -b 4096 -C "example@email.com"
+
+# Start the ssh-agent in the background
+eval "$(ssh-agent -s)"
+
+# Add ssh config file
+touch ~/.ssh/config
+
+## add the following to the config
+Host *
+  AddKeysToAgent yes
+  UseKeychain yes
+  IdentityFile ~/.ssh/id_rsa # or the location of your rsa key
+
+# Add your SSH private key to the ssh-agent and 
+# store your passphrase in the keychain
+ssh-add -K ~/.ssh/id_rsa
 
 # copy key to Github account
 pbcopy < ~/.ssh/id_rsa.pub
