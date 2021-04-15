@@ -13,6 +13,11 @@ These are the programs I typically download when setting up a new computer:
 7. Node - https://nodejs.org/en/download/
 8. Python - https://www.python.org/downloads/
 
+### Mobile Development
+
+1. Android Studio
+2. Xcode
+
 ## Computer Settings
 
 ### Increase Track Pad Speed
@@ -129,4 +134,4 @@ pbcopy < ~/.ssh/id_rsa.pub
 2. Files: Insert Final Newline
 3. Editor: Render Whitespace --> ALL
 4. Files: Trim Trailing Whitespace
-5. Files: Trim Final Newlines
+5. Files: Insert Final Newlines
