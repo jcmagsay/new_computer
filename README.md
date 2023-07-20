@@ -9,7 +9,7 @@ These are the programs I typically download when setting up a new computer:
 3. VS Code - https://code.visualstudio.com/Download
 4. iterm2 - https://iterm2.com/
 5. ohmyzsh `sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
-6. Homebrew `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
+6. Homebrew `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
 7. Node - https://nodejs.org/en/download/
 8. Python - https://www.python.org/downloads/
 
